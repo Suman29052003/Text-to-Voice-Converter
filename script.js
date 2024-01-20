@@ -19,20 +19,20 @@ window.speechSynthesis.onvoiceschanged = () => {
         let defaultVoice = voices[0];
         voiceSelect.value = voices.indexOf(defaultVoice).toString();
     }
-
-    voiceSelect.addEventListener('change',()=>{
-        speech.voice=voices[voiceSelect.value]
-    })
 }
 
-reloadSpan.addEventListener('click',()=>{
-    location.reload();
-})
-
-
+// For speakButton
 speakButton.addEventListener('click', function () {
-    console.log("hello")
     speech.text = speechText.value;
     window.speechSynthesis.speak(speech);
+});
 
-})
+// For voiceSelect
+voiceSelect.addEventListener('change', () => {
+    speech.voice = voices[voiceSelect.value];
+});
+
+// For reloadSpan
+reloadSpan.addEventListener('touchstart', () => {
+    location.reload();
+});
