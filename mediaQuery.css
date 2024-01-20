@@ -1,5 +1,20 @@
-@media screen and (max-width:490px) {
-    h1{
-        font-size: 26px;
-    }
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  textarea {
+    width: 70%;
+    height: 235px;
+  }
+  .selectSection {
+    width: 76%;
+  }
+  #speakButton{
+    padding: 9px;
+    height: 31px;
+    width: 70px;
+    margin-left: 10px;
+    gap: 5px;
+  }
 }

@@ -27,6 +27,7 @@ span {
   color: #f15a59;
   /* text-decoration: underline; */
   position: relative;
+  cursor: pointer;
 }
 
 span::before {
@@ -77,6 +78,7 @@ textarea:focus::placeholder{
 }
 
 select {
+    flex: 1;
   padding: 12px;
   width: 80%;
   height: 23px;
@@ -84,12 +86,18 @@ select {
   outline: 0;
   border-radius: 8px;
   background-color: #dab3b34d;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  cursor: pointer;
 }
+
+
 
 #speakButton {
   padding: 20px;
   height: 47px;
   width: 91px;
+  margin-left: 10px;
   border-radius: 8px;
   border: 0;
   outline: 0;
@@ -99,4 +107,6 @@ select {
   background-color: #070a52;
   color: #f15a59;
   font-weight: bolder;
+  gap: 10px;
+  cursor: pointer;
 }
